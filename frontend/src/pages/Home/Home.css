@@ -1,0 +1,110 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.home-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2b8a3e;
+}
+
+.home-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-badge {
+  font-size: 0.9rem;
+  color: #495057;
+  background: #e9ecef;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+}
+
+.logout-btn {
+  background: #f03e3e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: #c92a2a;
+}
+
+.home-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #2b8a3e 0%, #37b24d 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.welcome-card p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.home-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.home-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #212529;
+}
+
+.home-card p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}

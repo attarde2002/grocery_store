@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #166534;
+}
+
+.logo span {
+  color: #22c55e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #374151;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #16a34a;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #374151;
+}
+
+.nav-icon:hover {
+  color: #16a34a;
+}
+
+.footer {
+  margin-top: 60px;
+  background: #166534;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 24px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer h2,
+.footer h3 {
+  margin-bottom: 12px;
+}
+
+.footer p {
+  margin-bottom: 8px;
+  color: #dcfce7;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 18px;
+  border-top: 1px solid #15803d;
+  color: #dcfce7;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 14px 16px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .nav-icon span {
+    display: none;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
